@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Square+Peg&display=swap');
+
+
+body{
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  background-color: #f8f6f0;
+  background-image: url('file:///Users/majarodic/Desktop/istockphoto-1131202265-612x612.jpg');
+}
+h1{
+  font-weight: 700;
+  font-family: 'Oleo Script', cursive;
+  margin: 0px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: blueviolet;
+  color: pink;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+	font-size: 22px;
+	background-color: rgb(85, 153, 172);
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+button:hover{
+	background-color: blueviolet;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
